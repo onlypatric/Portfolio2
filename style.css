@@ -1,0 +1,171 @@
+:root {
+    --font-family-general: Marlin Soft SQ,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Roboto",
+        "Oxygen",
+        "Ubuntu",
+        "Cantarell",
+        "Fira Sans",
+        "Droid Sans",
+        "Helvetica Neue",
+        sans-serif
+}
+
+main {
+    /*    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;*/
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+    /* Adjust this as needed */
+}
+
+.content {
+    background: linear-gradient(to bottom right, #FFA500, #FF6B6B, #E2725B);
+    width: 70%;
+    min-width: 250px;
+    max-width: 350px;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: var(--font-family-general);
+    margin-bottom: 5vh;
+}
+
+a.link-p {
+    padding: 10px;
+    margin: 0;
+    color: #000;
+    background-color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 5px;
+    font-weight: bolder;
+}
+
+@media screen and (max-width:780px) {
+    .content {
+        min-height: 200px
+    }
+}
+
+.content h2 {
+    padding: 0;
+    margin: 0;
+    color: #fff
+}
+
+footer h2 {
+    padding: 10px;
+    margin: 10px;
+    font-size: xx-large;
+    font-family: var(--font-family-general);
+    background-color: #fff;
+    color: #000;
+    font-weight: bolder;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 0.1px #0000005f;
+}
+
+footer div.fcontent {
+    padding: 10px;
+    margin: 10px;
+    font-size: xx-large;
+    font-family: var(--font-family-general);
+    background-color: #fff;
+    color: #000;
+    font-weight: bolder;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 0.1px #0000005f;
+    width: calc(100% - 40px);
+    display: flex;
+    align-content: center;
+}
+
+footer div.fcontent img {
+    width: 25px;
+    height: 25px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 15px;
+}
+
+@media screen and (max-width:650px) {
+    footer div.fcontent a.link-p {
+        font-size: medium;
+    }
+}
+
+.content p {
+    text-align: justify;
+    color: #fff
+}
+
+.content ul li {
+    color: #fff;
+    margin-top: 10px;
+}
+
+li span.white-extra {
+    background-color: #fff;
+    color: #000;
+    padding: 2.5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px 0.1px #0000005f;
+    font-weight: bolder;
+    margin-right: 4px;
+}
+
+.linear-peach-gradient {
+    background: linear-gradient(to bottom right, #FFA500, #FF6B6B, #E2725B);
+    width: 200px;
+    height: 200px;
+}
+
+body {
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+    background-color: azure;
+}
+
+header {
+    z-index: 1;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1.main-title {
+    line-height: 45px;
+    text-align: center;
+    z-index: inherit;
+    font-family: var(--font-family-general);
+    margin: 0;
+    font-weight: 800;
+    letter-spacing: .5px;
+}
+
+h1.main-title span.colored-background-text {
+    padding: 5px 10px;
+    background: linear-gradient(to bottom right, #FFA500, #FF6B6B, #E2725B);
+    color: #fff;
+    font-size: x-large;
+    border-radius: 10px;
+}
+
+footer {
+    min-height: 98vh;
+    background: linear-gradient(to bottom right, #FFA500, #FF6B6B, #E2725B);
+    width: 95%;
+    padding: 2.5%;
+}
